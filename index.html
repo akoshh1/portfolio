@@ -70,7 +70,7 @@ h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2rem,4.5vw,3.2re
 .tile:hover figcaption{opacity:1}
 
 /* videos */
-.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,640px));gap:22px}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
 .vid{border-radius:var(--radius);overflow:hidden;background:#2b1e13;aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center}
 .vid video{width:100%;height:100%;object-fit:cover;display:block}
 .vid.empty video{display:none}
@@ -154,7 +154,7 @@ footer h2{margin-bottom:18px}
   <section id="photo" class="band">
     <div class="wrap">
       <div class="sec-head rv"><span class="num">01</span><h2>AI Photography</h2></div>
-      <p class="sec-sub rv">Cute glossy characters and warm colors: images imagined with AI and shaped by my own eye.</p>
+      <p class="sec-sub rv">Glossy porcelain, soft felt, isometric miniatures and pixel art: one warm, playful world in many styles, imagined with AI and shaped by my own eye.</p>
       <div class="gallery" id="gallery"></div>
     </div>
   </section>
@@ -162,7 +162,7 @@ footer h2{margin-bottom:18px}
   <section id="video">
     <div class="wrap">
       <div class="sec-head rv"><span class="num">02</span><h2>AI Video</h2></div>
-      <p class="sec-sub rv">Short moving pictures: my first steps into AI animation.</p>
+      <p class="sec-sub rv">Short moving pictures: retro anime, porcelain characters and tiny cozy scenes.</p>
       <div class="videos" id="videos"></div>
     </div>
   </section>
@@ -236,9 +236,15 @@ footer h2{margin-bottom:18px}
 */
 const PHOTOS = [
   { file: "photo-1.jpg", caption: "Porcelain me" },
-  { file: "photo-2.jpg", caption: "Girl with a camera" }
+  { file: "photo-2.jpg", caption: "Girl with a camera" },
+  { file: "photo-3.jpg", caption: "Felt poodle" },
+  { file: "photo-4.jpg", caption: "Isometric garden" },
+  { file: "photo-5.jpg", caption: "Pixel window cat" },
+  { file: "photo-6.jpg", caption: "Pixel game room" }
 ];
 const VIDEOS = [
+  { file: "video-2.mp4", label: "Retro anime café" },
+  { file: "video-3.mp4", label: "Porcelain barista" },
   { file: "video-1.mp4", label: "Tea party" }
 ];
 /* ======================== */
